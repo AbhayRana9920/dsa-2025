@@ -2,7 +2,7 @@
 
 
 import java.util.*;
-public class L2653 {
+public class L2653SlidingSubarrayBeauty {
     public int[] getSubarrayBeauty(int[] nums, int k, int x) {
         int n = nums.length;
 

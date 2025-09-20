@@ -3,7 +3,7 @@
 // 239. Sliding Window Maximum
 
 
-class L239 {
+class L239SlidingWindowMaximum {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int ans[] = new int[nums.length - k + 1];
         Deque<Integer> q = new LinkedList<>();
