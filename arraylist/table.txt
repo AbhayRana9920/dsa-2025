@@ -1,0 +1,29 @@
+| **Concept**                 | **Theory / Explanation**                                                                            | **Example / Syntax**                                           |
+| --------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **Definition**              | `ArrayList` is a **resizable array** present in `java.util`. It can **grow or shrink dynamically**. | `ArrayList<Integer> list = new ArrayList<>();`                 |
+| **Import Statement**        | Must be imported from Java Collections Framework.                                                   | `import java.util.ArrayList;`                                  |
+| **Type Safety**             | Use **generics** to define element type.                                                            | `ArrayList<String> names = new ArrayList<>();`                 |
+| **Add Element (End)**       | Adds element at the end.                                                                            | `list.add(10);`                                                |
+| **Add Element (At Index)**  | Inserts element at a specific position.                                                             | `list.add(1, 99);`                                             |
+| **Get Element**             | Returns element at a given index.                                                                   | `list.get(2);`                                                 |
+| **Update Element**          | Replaces existing element at index.                                                                 | `list.set(1, 50);`                                             |
+| **Remove by Index**         | Deletes element at given index.                                                                     | `list.remove(2);`                                              |
+| **Remove by Value**         | Removes first occurrence of value.                                                                  | `list.remove(Integer.valueOf(10));`                            |
+| **Check if Element Exists** | Returns `true` if present.                                                                          | `list.contains(20);`                                           |
+| **Size of ArrayList**       | Returns number of elements.                                                                         | `list.size();`                                                 |
+| **Is Empty Check**          | Returns `true` if no elements.                                                                      | `list.isEmpty();`                                              |
+| **Clear All Elements**      | Removes all elements.                                                                               | `list.clear();`                                                |
+| **Iteration (for loop)**    | Traverse using indices.                                                                             | `for(int i=0;i<list.size();i++)`                               |
+| **Iteration (for-each)**    | Simple enhanced loop.                                                                               | `for(int x : list)`                                            |
+| **Iteration (Iterator)**    | Use `Iterator` for safe traversal.                                                                  | `Iterator<Integer> it = list.iterator();`                      |
+| **Index of Element**        | Get first index of element.                                                                         | `list.indexOf(50);`                                            |
+| **Last Index of Element**   | Get last index (if duplicates).                                                                     | `list.lastIndexOf(50);`                                        |
+| **Convert to Array**        | Convert list → array.                                                                               | `Integer[] arr = list.toArray(new Integer[0]);`                |
+| **Sort ArrayList**          | Sorts in ascending order.                                                                           | `Collections.sort(list);`                                      |
+| **Reverse ArrayList**       | Reverse order of elements.                                                                          | `Collections.reverse(list);`                                   |
+| **Shuffle Elements**        | Randomizes order.                                                                                   | `Collections.shuffle(list);`                                   |
+| **Clone ArrayList**         | Shallow copy of list.                                                                               | `ArrayList<Integer> copy = (ArrayList<Integer>) list.clone();` |
+| **Equals Method**           | Compare two lists element-wise.                                                                     | `list1.equals(list2);`                                         |
+| **Sublist Extraction**      | Get part of a list.                                                                                 | `list.subList(2,5);`                                           |
+| **Remove All / Retain All** | Remove or keep specific elements.                                                                   | `list.removeAll(otherList);` / `list.retainAll(otherList);`    |
+| **Time Complexities**       | Access: O(1), Add: O(1)*, Remove: O(n)                                                              | —                                                              |

@@ -1,0 +1,13 @@
+| **Concept**                   | **Explanation**                                  | **Java Syntax / Example**                      | **DSA Use Case**                      |
+| ----------------------------- | ------------------------------------------------ | ---------------------------------------------- | ------------------------------------- |
+| **Definition**                | Resizable array implementing **Deque interface** | `ArrayDeque<Integer> dq = new ArrayDeque<>();` | Double-ended queue, BFS, stack, queue |
+| **Add First / Last**          | Add element to front or rear                     | `dq.addFirst(10); dq.addLast(20);`             | Enqueue / push                        |
+| **Offer First / Last**        | Similar to add, returns false if fails           | `dq.offerFirst(5); dq.offerLast(25);`          | Safe enqueue                          |
+| **Remove First / Last**       | Remove elements from front/rear                  | `dq.removeFirst(); dq.removeLast();`           | Dequeue / pop                         |
+| **Poll First / Last**         | Remove & return element, returns null if empty   | `dq.pollFirst(); dq.pollLast();`               | Safe dequeue                          |
+| **Peek First / Last**         | Retrieve front/rear without removing             | `dq.peekFirst(); dq.peekLast();`               | Inspect ends                          |
+| **Push / Pop**                | Stack operations using deque                     | `dq.push(50); dq.pop();`                       | Stack implementation                  |
+| **Iteration**                 | Traverse deque elements                          | `for(Integer x : dq){ ... }`                   | Processing elements                   |
+| **Size / isEmpty**            | Number of elements, check empty                  | `dq.size(); dq.isEmpty();`                     | Looping / termination                 |
+| **Contains / Remove(Object)** | Check existence, remove specific element         | `dq.contains(20); dq.remove(20);`              | Validation / deletion                 |
+| **Convert to Array / List**   | Convert to array or list                         | `Integer[] arr = dq.toArray(new Integer[0]);`  | Post-processing, sorting              |

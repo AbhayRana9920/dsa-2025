@@ -1,0 +1,19 @@
+| **Concept**                    | **Explanation**                                                      | **Java Syntax / Example**                        | **DSA Use Case**                         |
+| ------------------------------ | -------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------- |
+| **Definition**                 | Mutable sequence of characters; efficient for multiple modifications | `StringBuilder sb = new StringBuilder("Hello");` | Efficient string manipulation            |
+| **Append**                     | Add characters or strings at the end                                 | `sb.append(" World");`                           | Concatenation                            |
+| **Insert**                     | Insert characters/string at specific index                           | `sb.insert(5, " Java");`                         | Insertion                                |
+| **Delete**                     | Remove characters between start and end indices                      | `sb.delete(0, 5);`                               | Removing substring                       |
+| **DeleteCharAt**               | Remove character at specific index                                   | `sb.deleteCharAt(0);`                            | Character removal                        |
+| **Replace**                    | Replace characters between start and end                             | `sb.replace(0, 5, "Hi");`                        | Substring replacement                    |
+| **Reverse**                    | Reverse the string                                                   | `sb.reverse();`                                  | Palindrome check, reverse operations     |
+| **CharAt / SetCharAt**         | Get or set character at index                                        | `sb.charAt(0); sb.setCharAt(0,'X');`             | Traversal, modification                  |
+| **Length / Capacity**          | Get current length or total capacity of buffer                       | `sb.length(); sb.capacity();`                    | Looping, performance check               |
+| **EnsureCapacity**             | Ensure minimum capacity                                              | `sb.ensureCapacity(50);`                         | Performance optimization                 |
+| **TrimToSize**                 | Reduce capacity to current length                                    | `sb.trimToSize();`                               | Memory optimization                      |
+| **ToString**                   | Convert StringBuilder to String                                      | `String s = sb.toString();`                      | Interoperability with String             |
+| **Chaining**                   | Methods return StringBuilder for chaining                            | `sb.append("A").insert(0,"B").reverse();`        | Concise operations                       |
+| **Compare / equals**           | Compare content (not reference)                                      | `sb.toString().equals("Hello");`                 | String comparison                        |
+| **Substring**                  | Extract part of the string                                           | `sb.substring(0,3);`                             | DSA substring problems                   |
+| **Frequency / DSA use**        | Can convert to char array / String for frequency counting            | `char[] arr = sb.toString().toCharArray();`      | Character frequency, palindrome, anagram |
+| **Palindrome / Reverse check** | Reverse and compare                                                  | `sb.reverse().toString();`                       | Classic DSA problem                      |

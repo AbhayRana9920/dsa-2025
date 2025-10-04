@@ -1,0 +1,12 @@
+| **Concept**        | **Explanation**                                          | **Java Syntax / Example**                            | **DSA Use Case**             |
+| ------------------ | -------------------------------------------------------- | ---------------------------------------------------- | ---------------------------- |
+| **Definition**     | FIFO (First In First Out) data structure                 | `Queue<Integer> q = new LinkedList<>();`             | Task scheduling, BFS         |
+| **Add / offer**    | Add element to queue                                     | `q.add(10); q.offer(20);`                            | Enqueue                      |
+| **Remove / poll**  | Remove and return head (throws exception / returns null) | `q.remove(); q.poll();`                              | Dequeue                      |
+| **Peek / element** | Retrieve head without removing                           | `q.peek(); q.element();`                             | Inspect front element        |
+| **isEmpty / size** | Check if queue is empty, number of elements              | `q.isEmpty(); q.size();`                             | Condition checks, iteration  |
+| **Iteration**      | Traverse queue                                           | `for(Integer x : q){ ... }`                          | Processing elements          |
+| **PriorityQueue**  | Queue where elements are ordered based on priority       | `PriorityQueue<Integer> pq = new PriorityQueue<>();` | Task scheduling, min-heap    |
+| **Reverse Queue**  | Reverse elements using stack                             | Use `Stack` to reverse                               | DSA question (reversing)     |
+| **Merge / Copy**   | Merge two queues or copy                                 | `q.addAll(otherQueue);`                              | Combining tasks              |
+| **Custom Queue**   | User-defined class with array or LinkedList              | Implement enqueue, dequeue methods                   | Learning DS queue internally |

@@ -1,0 +1,29 @@
+| **Concept**                         | **Explanation**                                     | **Java Syntax / Example**                                        | **DSA Use Case**                      |
+| ----------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------- |
+| **Definition**                      | Immutable sequence of characters                    | `String str = "Hello";`                                          | Store text                            |
+| **String Creation**                 | Create strings using literals or constructor        | `String s1 = "Hi"; String s2 = new String("Hi");`                | Any string initialization             |
+| **Length**                          | Get number of characters                            | `str.length();`                                                  | Iteration, indexing                   |
+| **charAt**                          | Access character at index                           | `str.charAt(0);`                                                 | String traversal                      |
+| **substring**                       | Get part of string                                  | `str.substring(0,3);`                                            | Extracting substrings                 |
+| **concat / + operator**             | Combine strings                                     | `str1 + str2; str1.concat(str2);`                                | Joining strings                       |
+| **equals / equalsIgnoreCase**       | Compare two strings                                 | `str1.equals(str2); str1.equalsIgnoreCase(str2);`                | String comparison                     |
+| **compareTo / compareToIgnoreCase** | Lexicographical comparison                          | `str1.compareTo(str2);`                                          | Sorting / ordering strings            |
+| **contains**                        | Check if substring exists                           | `str.contains("sub");`                                           | Substring search                      |
+| **startsWith / endsWith**           | Check prefix or suffix                              | `str.startsWith("H"); str.endsWith("o");`                        | Pattern checks                        |
+| **indexOf / lastIndexOf**           | Find index of character/substr                      | `str.indexOf('e'); str.lastIndexOf("lo");`                       | Searching                             |
+| **replace / replaceAll**            | Replace characters or substrings                    | `str.replace('l','x'); str.replaceAll("lo","XX");`               | Modification                          |
+| **trim**                            | Remove leading/trailing spaces                      | `str.trim();`                                                    | Clean input                           |
+| **toUpperCase / toLowerCase**       | Convert case                                        | `str.toUpperCase(); str.toLowerCase();`                          | Case-insensitive comparison           |
+| **split**                           | Split string into array                             | `str.split(" ");`                                                | Tokenization, parsing                 |
+| **toCharArray**                     | Convert string to char array                        | `char[] arr = str.toCharArray();`                                | Character-level processing            |
+| **StringBuilder / StringBuffer**    | Mutable string for efficiency                       | `StringBuilder sb = new StringBuilder("Hello"); sb.append("!");` | Efficient concatenation, modification |
+| **reverse**                         | Reverse string (via StringBuilder)                  | `new StringBuilder(str).reverse().toString();`                   | Palindrome, reverse operations        |
+| **isEmpty / length check**          | Check empty string                                  | `str.isEmpty(); str.length()==0;`                                | Validation                            |
+| **valueOf / format**                | Convert data types to string                        | `String.valueOf(123); String.format("Hi %s", name);`             | Conversion, formatting                |
+| **intern**                          | Store string in String Pool for memory optimization | `str.intern();`                                                  | Memory optimization                   |
+| **Regex methods**                   | Pattern matching & validation                       | `str.matches("[a-z]+"); str.replaceAll("\\d","X");`              | Validation, parsing                   |
+| **Palindrome check**                | Check if string reads same forward & backward       | `s.equals(new StringBuilder(s).reverse().toString());`           | Classic DSA problem                   |
+| **Anagram check**                   | Compare two strings ignoring order                  | Use `char[]` sort & `Arrays.equals`                              | Classic DSA problem                   |
+| **Frequency Count**                 | Count occurrence of chars                           | Use `HashMap<Character,Integer>`                                 | Classic DSA problem (char frequency)  |
+| **Sliding Window / Substrings**     | Process substrings for pattern searching            | Loop with `substring(i,j)` or `charAt(i)`                        | DSA string algorithms                 |
+| **Rolling Hash / KMP / Rabin-Karp** | Efficient substring search algorithms               | Algorithm implementation                                         | Advanced string DSA                   |

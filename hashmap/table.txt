@@ -1,0 +1,21 @@
+| **Concept**          | **Explanation**                                                                                                              | **Java Syntax / Example**                           |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| **Definition**       | HashMap stores key-value pairs, allowing **fast access, insertion, and deletion**. Keys are unique; values can be duplicate. | `HashMap<Integer, String> map = new HashMap<>();`   |
+| **Import Statement** | Must import `java.util`.                                                                                                     | `import java.util.HashMap;`                         |
+| **Add / Put**        | Add a key-value pair. If key exists, value is updated.                                                                       | `map.put(1, "Alice");`                              |
+| **Get Value**        | Retrieve value by key; returns `null` if key not found.                                                                      | `String val = map.get(1);`                          |
+| **Contains Key**     | Check if key exists.                                                                                                         | `map.containsKey(1);`                               |
+| **Contains Value**   | Check if value exists.                                                                                                       | `map.containsValue("Alice");`                       |
+| **Remove by Key**    | Remove key and its value.                                                                                                    | `map.remove(1);`                                    |
+| **Size of Map**      | Number of key-value pairs.                                                                                                   | `map.size();`                                       |
+| **Is Empty**         | Check if map has any elements.                                                                                               | `map.isEmpty();`                                    |
+| **Iterate Keys**     | Loop through all keys.                                                                                                       | `for(Integer k : map.keySet())`                     |
+| **Iterate Values**   | Loop through all values.                                                                                                     | `for(String v : map.values())`                      |
+| **Iterate Entries**  | Loop through key-value pairs.                                                                                                | `for(Map.Entry<Integer,String> e : map.entrySet())` |
+| **Replace Value**    | Replace value for existing key.                                                                                              | `map.replace(1,"Bob");`                             |
+| **Clear Map**        | Remove all entries.                                                                                                          | `map.clear();`                                      |
+| **Merge Maps**       | Combine another map.                                                                                                         | `map.putAll(otherMap);`                             |
+| **Frequency Count**  | Count occurrence of elements using map.                                                                                      | `map.put(x,map.getOrDefault(x,0)+1);`               |
+| **Key Uniqueness**   | Keys must be unique; duplicate keys overwrite value.                                                                         | —                                                   |
+| **Null Key / Value** | Only **one null key** allowed; multiple null values allowed.                                                                 | `map.put(null,"Value");`                            |
+| **Time Complexity**  | Average: O(1) for get/put/remove; Worst: O(n) if collisions.                                                                 | —                                                   |

@@ -1,0 +1,32 @@
+| **Concept**                    | **Theory / Explanation**                                                                              | **Example / Syntax**                        |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **Definition**                 | Array is a fixed-size sequential collection of elements of the same type stored in contiguous memory. | `int[] arr = new int[5];`                   |
+| **Declaration**                | Declares an array variable without allocating memory.                                                 | `int[] arr;` or `int arr[];`                |
+| **Initialization**             | Assigns memory and values to the array.                                                               | `int[] arr = {10, 20, 30};`                 |
+| **Default Values**             | All elements get default values (0 for int, false for boolean, null for objects).                     | `int[] a = new int[3]; // {0,0,0}`          |
+| **Accessing Elements**         | Access using 0-based index.                                                                           | `arr[2]` → 3rd element                      |
+| **Modifying Elements**         | Replace or update values using index.                                                                 | `arr[1] = 50;`                              |
+| **Array Length**               | Property to get total elements.                                                                       | `arr.length`                                |
+| **Traversal (For Loop)**       | Access all elements in order.                                                                         | `for(int i=0;i<arr.length;i++)`             |
+| **Enhanced For Loop**          | Simpler syntax for traversal.                                                                         | `for(int num : arr)`                        |
+| **Printing Array**             | Convert array to string for display.                                                                  | `System.out.println(Arrays.toString(arr));` |
+| **Copying Array (Manual)**     | Copy elements using a loop.                                                                           | `for(int i=0;i<n;i++) newArr[i] = arr[i];`  |
+| **Copying Array (Built-in)**   | Use efficient Java methods.                                                                           | `System.arraycopy(src, 0, dest, 0, len);`   |
+| **Sorting**                    | Sorts array in ascending order.                                                                       | `Arrays.sort(arr);`                         |
+| **Searching (Linear)**         | Traverse and match each element.                                                                      | `for(int i: arr) if(i==target)`             |
+| **Binary Search**              | Efficient search on sorted arrays.                                                                    | `Arrays.binarySearch(arr, key);`            |
+| **Reversing Array**            | Swap start and end elements.                                                                          | Two-pointer method                          |
+| **Multi-dimensional Array**    | Array of arrays.                                                                                      | `int[][] matrix = new int[3][3];`           |
+| **Jagged Array**               | Different-sized inner arrays.                                                                         | `int[][] jagged = new int[3][];`            |
+| **Passing to Methods**         | Arrays are passed **by reference**.                                                                   | `void print(int[] arr){...}`                |
+| **Returning from Methods**     | Methods can return arrays.                                                                            | `return arr;`                               |
+| **Clone Method**               | Creates a shallow copy.                                                                               | `int[] clone = arr.clone();`                |
+| **Equality Check**             | Compare values (not reference).                                                                       | `Arrays.equals(arr1, arr2)`                 |
+| **Filling Array**              | Assign same value to all elements.                                                                    | `Arrays.fill(arr, 1);`                      |
+| **Stream Operations (Java 8)** | Perform map/filter/reduce easily.                                                                     | `Arrays.stream(arr).sum();`                 |
+| **Common Exception**           | Accessing invalid index → `ArrayIndexOutOfBoundsException`                                            | `arr[arr.length] = 10; // Error`            |
+| **Time Complexity**            | Access: O(1), Search: O(n), Sort: O(n log n)                                                          | —                                           |
+| **Space Complexity**           | O(n) for n elements                                                                                   | —                                           |
+
+
+
