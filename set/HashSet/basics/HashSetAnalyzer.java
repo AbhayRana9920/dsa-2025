@@ -1,4 +1,4 @@
-package HashSet;
+package HashSet.basics;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package stringbuilder;
+package stringbuilder.basics;
 
 import java.util.*;
 

@@ -1,3 +1,5 @@
+package array.basics;
+
 import java.util.*;
 
 public class ArrayAnalyzer {
